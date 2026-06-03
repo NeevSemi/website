@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LLMScoreBench — Domain Benchmarking · NeevSemi</title>
+  <meta name="description" content="Quantify LLM fitness for your semiconductor workflows. Run standardized benchmarks covering RTL generation, verification scripting, DRC analysis, and more." />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+
+<!-- ═══ NAV ═══════════════════════════════════════════════════════════ -->
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="../index.html" class="nav__logo">Neev<span>Semi</span></a>
+    <ul class="nav__links">
+      <li class="nav-dropdown">
+        <a href="#">Products</a>
+                <div class="dropdown-menu">
+          <a href="neeVdisha.html">NeevDisha<span>Foundational Agentic Platform</span></a>
+        </div>
+      </li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../about.html#contact" class="nav__cta-link">Contact Us</a></li>
+    </ul>
+    <button class="nav__hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" role="dialog" aria-modal="true">
+  <a href="neeVdisha.html">NeevDisha</a>
+  <a href="../about.html">About</a>
+  <a href="../about.html#contact" class="mob-cta">Contact Us</a>
+</div>
+
+<!-- ═══ HERO ═══════════════════════════════════════════════════════════ -->
+<section class="section section--dark hero hero--dark">
+  <svg class="hero__bg-pattern" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+    <defs>
+      <pattern id="circuit" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
+        <path d="M10 40 H30 M50 40 H70 M40 10 V30 M40 50 V70" stroke="#fff" stroke-width="0.8" fill="none"/>
+        <circle cx="40" cy="40" r="3" fill="none" stroke="#fff" stroke-width="0.8"/>
+        <circle cx="10" cy="40" r="2" fill="#fff"/>
+        <circle cx="70" cy="40" r="2" fill="#fff"/>
+        <circle cx="40" cy="10" r="2" fill="#fff"/>
+        <circle cx="40" cy="70" r="2" fill="#fff"/>
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#circuit)"/>
+  </svg>
+  <div class="inner hero__content">
+    <p class="hero__eyebrow fade-up d1">Benchmark</p>
+    <h1 class="hero__headline fade-up d2">LLMScoreBench</h1>
+    <p class="hero__sub fade-up d3">Quantify LLM fitness for your semiconductor workflows. Run standardized benchmarks covering RTL generation, verification scripting, DRC analysis, and more.</p>
+    <div class="hero__ctas fade-up d4">
+      <a href="../about.html#contact" class="btn btn--blue">Request a Demo</a>
+      <a href="#dashboard" class="btn btn--pill-white">See the Dashboard</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FEATURES ════════════════════════════════════════════════════════ -->
+<section class="section section--light">
+  <div class="inner">
+    <div class="two-col">
+      <div class="reveal">
+        <p class="eyebrow" style="font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--apple-blue);margin-bottom:14px;">What it does</p>
+        <h2 style="font-family:var(--font-display);font-size:40px;font-weight:600;line-height:1.10;color:var(--near-black);margin-bottom:20px;">Stop guessing which LLM fits your EDA stack</h2>
+        <p style="font-size:17px;line-height:1.47;color:var(--text-sec-light);margin-bottom:28px;">Generic LLM benchmarks measure chatbot performance. LLMScoreBench measures what matters for semiconductor teams — RTL correctness, DRC compliance, simulation fidelity, and scripting accuracy. Know exactly which model to trust before it touches your tape-out.</p>
+        <ul class="feat-list">
+          <li class="feat-item feat-item--light"><div class="feat-check"></div><p>Domain-specific benchmark suites for semiconductor tasks</p></li>
+          <li class="feat-item feat-item--light"><div class="feat-check"></div><p>Side-by-side model comparison dashboards</p></li>
+          <li class="feat-item feat-item--light"><div class="feat-check"></div><p>Latency, accuracy, and cost scoring in a single view</p></li>
+          <li class="feat-item feat-item--light"><div class="feat-check"></div><p>Custom benchmark authoring toolkit for proprietary tasks</p></li>
+        </ul>
+      </div>
+      <div class="reveal">
+        <div style="background:var(--near-black);border-radius:16px;padding:32px 28px;">
+          <p style="font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:24px;">Scoring Dimensions</p>
+          <div style="display:flex;flex-direction:column;gap:16px;">
+            <div style="display:flex;align-items:center;gap:16px;">
+              <div style="width:40px;height:40px;border-radius:10px;background:rgba(0,113,227,0.15);border:1px solid rgba(0,113,227,0.3);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" fill="#2997ff"/></svg>
+              </div>
+              <div><div style="font-size:14px;font-weight:600;color:var(--white);margin-bottom:2px;">Accuracy</div><div style="font-size:12px;color:rgba(255,255,255,0.45);">Task-specific correctness score</div></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:16px;">
+              <div style="width:40px;height:40px;border-radius:10px;background:rgba(0,113,227,0.15);border:1px solid rgba(0,113,227,0.3);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" fill="#2997ff"/></svg>
+              </div>
+              <div><div style="font-size:14px;font-weight:600;color:var(--white);margin-bottom:2px;">Latency</div><div style="font-size:12px;color:rgba(255,255,255,0.45);">Avg response time per task type</div></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:16px;">
+              <div style="width:40px;height:40px;border-radius:10px;background:rgba(0,113,227,0.15);border:1px solid rgba(0,113,227,0.3);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1.41 16.09V20h-2.67v-1.93c-1.71-.36-3.16-1.46-3.27-3.4h1.96c.1 1.05.82 1.87 2.65 1.87 1.96 0 2.4-.98 2.4-1.59 0-.83-.44-1.61-2.67-2.14-2.48-.6-4.18-1.62-4.18-3.67 0-1.72 1.39-2.84 3.11-3.21V4h2.67v1.95c1.86.45 2.79 1.86 2.85 3.39H14.3c-.05-1.11-.64-1.87-2.22-1.87-1.5 0-2.4.68-2.4 1.64 0 .84.65 1.39 2.67 1.91s4.18 1.39 4.18 3.91c-.01 1.83-1.38 2.83-3.12 3.16z" fill="#2997ff"/></svg>
+              </div>
+              <div><div style="font-size:14px;font-weight:600;color:var(--white);margin-bottom:2px;">Cost</div><div style="font-size:12px;color:rgba(255,255,255,0.45);">Token cost per benchmark run</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ DASHBOARD ════════════════════════════════════════════════════════ -->
+<section class="section section--dark" id="dashboard">
+  <div class="inner">
+    <div class="sec-header reveal">
+      <p class="eyebrow">Model Comparison</p>
+      <h2>See every model's semiconductor score</h2>
+      <p>Side-by-side comparison across all major LLM providers. Updated continuously as new models and versions release.</p>
+    </div>
+
+    <div style="background:var(--dark-surf);border-radius:16px;padding:40px 36px;margin-top:0;" class="reveal">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:32px;flex-wrap:wrap;gap:16px;">
+        <div>
+          <p style="font-size:14px;font-weight:600;color:var(--white);margin-bottom:4px;">Semiconductor Task Suite — Overall Score</p>
+          <p style="font-size:12px;color:rgba(255,255,255,0.4);">RTL Generation · DRC Analysis · Verification Scripting · Timing Analysis</p>
+        </div>
+        <div style="display:flex;gap:16px;">
+          <div style="text-align:center;">
+            <div style="font-family:var(--font-display);font-size:28px;font-weight:600;color:var(--bright-blue);line-height:1;">50+</div>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);margin-top:4px;">Tasks Covered</div>
+          </div>
+          <div style="width:1px;background:rgba(255,255,255,0.08);"></div>
+          <div style="text-align:center;">
+            <div style="font-family:var(--font-display);font-size:28px;font-weight:600;color:var(--bright-blue);line-height:1;">1.2s</div>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);margin-top:4px;">Avg Latency</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bench-wrap">
+        <div class="bench-row">
+          <div class="bench-lbl">Claude 3.5</div>
+          <div class="bench-track"><div class="bench-fill best" data-val="88"></div></div>
+          <div class="bench-val" style="color:var(--bright-blue);font-weight:700;">88%</div>
+        </div>
+        <div class="bench-row">
+          <div class="bench-lbl">GPT-4o</div>
+          <div class="bench-track"><div class="bench-fill" data-val="82"></div></div>
+          <div class="bench-val">82%</div>
+        </div>
+        <div class="bench-row">
+          <div class="bench-lbl">Gemini 1.5</div>
+          <div class="bench-track"><div class="bench-fill" data-val="74"></div></div>
+          <div class="bench-val">74%</div>
+        </div>
+        <div class="bench-row">
+          <div class="bench-lbl">Llama 3</div>
+          <div class="bench-track"><div class="bench-fill" data-val="65"></div></div>
+          <div class="bench-val">65%</div>
+        </div>
+      </div>
+
+      <p style="font-size:11px;color:rgba(255,255,255,0.25);margin-top:24px;text-align:center;letter-spacing:.03em;">Representative benchmark data. Your results will vary based on your specific task configuration and custom benchmarks.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CUSTOM BENCHMARKS ════════════════════════════════════════════════ -->
+<section class="section section--light">
+  <div class="inner">
+    <div class="sec-header reveal">
+      <p class="eyebrow">Custom Toolkit</p>
+      <h2>Author benchmarks for your own workflows</h2>
+      <p>Pre-built suites cover standard semiconductor tasks. The custom authoring toolkit lets you encode proprietary evaluation criteria unique to your design process.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;" class="reveal">
+      <div style="background:var(--white);border-radius:12px;padding:28px 22px;box-shadow:var(--card-shadow);">
+        <div style="font-size:28px;margin-bottom:12px;">📐</div>
+        <div style="font-family:var(--font-display);font-size:17px;font-weight:700;color:var(--near-black);margin-bottom:8px;">RTL Generation</div>
+        <div style="font-size:14px;color:var(--text-sec-light);line-height:1.5;">Verilog / SystemVerilog correctness, synthesis-readiness, and style conformance.</div>
+      </div>
+      <div style="background:var(--white);border-radius:12px;padding:28px 22px;box-shadow:var(--card-shadow);">
+        <div style="font-size:28px;margin-bottom:12px;">🔍</div>
+        <div style="font-family:var(--font-display);font-size:17px;font-weight:700;color:var(--near-black);margin-bottom:8px;">DRC Analysis</div>
+        <div style="font-size:14px;color:var(--text-sec-light);line-height:1.5;">Design rule checking accuracy across multiple foundry node targets and PDKs.</div>
+      </div>
+      <div style="background:var(--white);border-radius:12px;padding:28px 22px;box-shadow:var(--card-shadow);">
+        <div style="font-size:28px;margin-bottom:12px;">✅</div>
+        <div style="font-family:var(--font-display);font-size:17px;font-weight:700;color:var(--near-black);margin-bottom:8px;">Verification Scripting</div>
+        <div style="font-size:14px;color:var(--text-sec-light);line-height:1.5;">UVM testbench generation, assertion authoring, and coverage closure quality.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CTA ══════════════════════════════════════════════════════════════ -->
+<section class="section section--dark">
+  <div class="inner">
+    <div class="cta-banner reveal">
+      <h2>Know which LLM to trust before tape-out.</h2>
+      <p>Request a demo and run your first benchmark suite on your actual semiconductor workflows.</p>
+      <div class="cta-btns">
+        <a href="../about.html#contact" class="btn btn--blue">Request a Demo</a>
+        <a href="llmgateway.html" class="btn btn--pill-white">Explore LLMGateway</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ══════════════════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__simple">
+      <div class="footer__brand-simple">
+        <h3>Neev<span>Semi</span></h3>
+        <p>NeevSemi India Private Limited · Bangalore, Karnataka · Est. 2026</p>
+      </div>
+      <div class="footer__legal-simple">
+        <a href="../terms.html">Terms of Service</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; 2026 NeevSemi India Private Limited. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

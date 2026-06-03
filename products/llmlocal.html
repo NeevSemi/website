@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LLMLocal — On-Premise Deployment · NeevSemi</title>
+  <meta name="description" content="Deploy and run large language models entirely within your infrastructure. Full data sovereignty and IP protection — critical for semiconductor companies handling proprietary design data." />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+
+<!-- ═══ NAV ═══════════════════════════════════════════════════════════ -->
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="../index.html" class="nav__logo">Neev<span>Semi</span></a>
+    <ul class="nav__links">
+      <li class="nav-dropdown">
+        <a href="#">Products</a>
+                <div class="dropdown-menu">
+          <a href="neeVdisha.html">NeevDisha<span>Foundational Agentic Platform</span></a>
+        </div>
+      </li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../about.html#contact" class="nav__cta-link">Contact Us</a></li>
+    </ul>
+    <button class="nav__hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" role="dialog" aria-modal="true">
+  <a href="neeVdisha.html">NeevDisha</a>
+  <a href="../about.html">About</a>
+  <a href="../about.html#contact" class="mob-cta">Contact Us</a>
+</div>
+
+<!-- ═══ HERO ═══════════════════════════════════════════════════════════ -->
+<section class="section section--dark hero hero--dark">
+  <svg class="hero__bg-pattern" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+    <defs>
+      <pattern id="circuit" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
+        <path d="M10 40 H30 M50 40 H70 M40 10 V30 M40 50 V70" stroke="#fff" stroke-width="0.8" fill="none"/>
+        <circle cx="40" cy="40" r="3" fill="none" stroke="#fff" stroke-width="0.8"/>
+        <circle cx="10" cy="40" r="2" fill="#fff"/>
+        <circle cx="70" cy="40" r="2" fill="#fff"/>
+        <circle cx="40" cy="10" r="2" fill="#fff"/>
+        <circle cx="40" cy="70" r="2" fill="#fff"/>
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#circuit)"/>
+  </svg>
+  <div class="inner hero__content">
+    <p class="hero__eyebrow fade-up d1">On-Premise</p>
+    <h1 class="hero__headline fade-up d2">LLMLocal</h1>
+    <p class="hero__sub fade-up d3">Deploy and run large language models entirely within your infrastructure. Full data sovereignty and IP protection — critical for semiconductor companies handling proprietary design data.</p>
+    <div class="hero__ctas fade-up d4">
+      <a href="../about.html#contact" class="btn btn--blue">Request a Demo</a>
+      <a href="#deployment" class="btn btn--pill-white">See Deployment</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ WHY ON-PREMISE ══════════════════════════════════════════════════ -->
+<section class="section section--light">
+  <div class="inner">
+    <div class="two-col">
+      <div class="reveal">
+        <p class="eyebrow" style="font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--apple-blue);margin-bottom:14px;">Why On-Premise</p>
+        <h2 style="font-family:var(--font-display);font-size:40px;font-weight:600;line-height:1.10;color:var(--near-black);margin-bottom:20px;">Your IP never leaves your walls.</h2>
+        <p style="font-size:17px;line-height:1.47;color:var(--text-sec-light);margin-bottom:20px;">Semiconductor design data is among the most sensitive IP in the world. Sending proprietary RTL, netlist, or timing data to a cloud LLM provider isn't just a compliance risk — it's an existential one. LLMLocal keeps every prompt and response inside your firewall.</p>
+        <p style="font-size:17px;line-height:1.47;color:var(--text-sec-light);margin-bottom:28px;">With LLMLocal, you get the power of frontier-scale language models with the security posture of a fully air-gapped system — optimized for the GPU infrastructure you already own.</p>
+        <ul class="feat-list">
+          <li class="feat-item feat-item--light"><div class="feat-check"></div><p>Air-gapped deployment behind your firewall</p></li>
+          <li class="feat-item feat-item--light"><div class="feat-check"></div><p>GPU-optimized inference for semiconductor workloads</p></li>
+          <li class="feat-item feat-item--light"><div class="feat-check"></div><p>Fine-tuning on proprietary design data</p></li>
+          <li class="feat-item feat-item--light"><div class="feat-check"></div><p>Full compliance with ITAR and export controls</p></li>
+        </ul>
+      </div>
+      <div class="reveal">
+        <!-- Security pillars visual -->
+        <div style="display:flex;flex-direction:column;gap:14px;">
+          <div style="background:var(--near-black);border-radius:14px;padding:28px 24px;">
+            <p style="font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:20px;">Security Guarantees</p>
+            <div style="display:flex;flex-direction:column;gap:14px;">
+              <div style="display:flex;align-items:center;gap:12px;">
+                <div style="width:8px;height:8px;border-radius:50%;background:#34c759;flex-shrink:0;"></div>
+                <div style="font-size:14px;color:rgba(255,255,255,0.8);">Zero data egress — prompts stay on-prem</div>
+              </div>
+              <div style="display:flex;align-items:center;gap:12px;">
+                <div style="width:8px;height:8px;border-radius:50%;background:#34c759;flex-shrink:0;"></div>
+                <div style="font-size:14px;color:rgba(255,255,255,0.8);">No external API keys or cloud dependencies</div>
+              </div>
+              <div style="display:flex;align-items:center;gap:12px;">
+                <div style="width:8px;height:8px;border-radius:50%;background:#34c759;flex-shrink:0;"></div>
+                <div style="font-size:14px;color:rgba(255,255,255,0.8);">ITAR-compliant infrastructure configuration</div>
+              </div>
+              <div style="display:flex;align-items:center;gap:12px;">
+                <div style="width:8px;height:8px;border-radius:50%;background:#34c759;flex-shrink:0;"></div>
+                <div style="font-size:14px;color:rgba(255,255,255,0.8);">Audit logs remain fully under your control</div>
+              </div>
+              <div style="display:flex;align-items:center;gap:12px;">
+                <div style="width:8px;height:8px;border-radius:50%;background:#34c759;flex-shrink:0;"></div>
+                <div style="font-size:14px;color:rgba(255,255,255,0.8);">Fine-tune on your proprietary design corpus</div>
+              </div>
+              <div style="border-top:1px solid rgba(255,255,255,0.08);padding-top:14px;margin-top:2px;">
+                <div style="font-size:12px;color:rgba(255,255,255,0.35);">Designed for defense-adjacent semiconductor teams with the strictest security requirements.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ DEPLOYMENT ARCHITECTURE ═════════════════════════════════════════ -->
+<section class="section section--dark" id="deployment">
+  <div class="inner">
+    <div class="sec-header reveal">
+      <p class="eyebrow">Deployment Architecture</p>
+      <h2>Runs entirely inside your infrastructure</h2>
+      <p>LLMLocal deploys on your existing GPU cluster. No internet connection required after initial setup — fully air-gapped from day one.</p>
+    </div>
+
+    <div class="deploy-box reveal">
+      <div class="deploy-box__label">YOUR INFRASTRUCTURE — AIR-GAPPED</div>
+      <div class="deploy-inner">
+        <div class="deploy-item">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="6" width="20" height="12" rx="2" stroke="#4d8eff" stroke-width="1.5" fill="none"/>
+            <rect x="5" y="9" width="14" height="6" rx="1" fill="rgba(41,151,255,0.2)" stroke="rgba(41,151,255,0.4)" stroke-width="1"/>
+            <circle cx="12" cy="12" r="2" fill="#0071e3"/>
+          </svg>
+          GPU Cluster
+        </div>
+        <div class="deploy-item">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#4d8eff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+          LLMLocal Engine
+        </div>
+        <div class="deploy-item">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" stroke="#4d8eff" stroke-width="1.5" fill="none"/>
+            <path d="M9 12l2 2 4-4" stroke="#4d8eff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Proprietary Design Data
+        </div>
+      </div>
+      <div style="margin-top:20px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.08);text-align:center;">
+        <div style="font-size:12px;color:rgba(255,255,255,0.3);letter-spacing:.04em;">⛔ No outbound connections · No cloud dependencies · No data egress</div>
+      </div>
+    </div>
+
+    <!-- GPU specs row -->
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px;" class="reveal">
+      <div style="background:var(--dark-surf);border-radius:10px;padding:24px 20px;">
+        <div style="font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:10px;">Compute</div>
+        <div style="font-size:15px;font-weight:600;color:var(--white);margin-bottom:6px;">GPU-Optimized Inference</div>
+        <div style="font-size:13px;color:rgba(255,255,255,0.50);line-height:1.5;">Quantized model serving with batching and KV-cache tuned for EDA task patterns and long context semiconductor prompts.</div>
+      </div>
+      <div style="background:var(--dark-surf);border-radius:10px;padding:24px 20px;">
+        <div style="font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:10px;">Fine-tuning</div>
+        <div style="font-size:15px;font-weight:600;color:var(--white);margin-bottom:6px;">Train on Your Design Corpus</div>
+        <div style="font-size:13px;color:rgba(255,255,255,0.50);line-height:1.5;">LoRA and full fine-tuning pipelines on your proprietary RTL, verification collateral, and internal design standards.</div>
+      </div>
+      <div style="background:var(--dark-surf);border-radius:10px;padding:24px 20px;">
+        <div style="font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:10px;">Compliance</div>
+        <div style="font-size:15px;font-weight:600;color:var(--white);margin-bottom:6px;">ITAR &amp; Export Control Ready</div>
+        <div style="font-size:13px;color:rgba(255,255,255,0.50);line-height:1.5;">Deployment configuration validated for ITAR compliance. Full documentation for security reviews and audits.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ WHO IT'S FOR ════════════════════════════════════════════════════ -->
+<section class="section section--light">
+  <div class="inner">
+    <div class="sec-header reveal">
+      <p class="eyebrow">Ideal For</p>
+      <h2>Built for semiconductor teams that can't compromise</h2>
+      <p>If your design data is your competitive moat, LLMLocal is the only choice.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;" class="reveal">
+      <div style="background:var(--white);border-radius:12px;padding:28px 22px;box-shadow:var(--card-shadow);">
+        <div style="font-size:28px;margin-bottom:12px;">🏛️</div>
+        <div style="font-family:var(--font-display);font-size:17px;font-weight:700;color:var(--near-black);margin-bottom:8px;">Defense &amp; Aerospace</div>
+        <div style="font-size:14px;color:var(--text-sec-light);line-height:1.5;">ITAR-regulated programs where no design data may transit untrusted networks or reside in commercial cloud environments.</div>
+      </div>
+      <div style="background:var(--white);border-radius:12px;padding:28px 22px;box-shadow:var(--card-shadow);">
+        <div style="font-size:28px;margin-bottom:12px;">🏭</div>
+        <div style="font-family:var(--font-display);font-size:17px;font-weight:700;color:var(--near-black);margin-bottom:8px;">Leading Foundries &amp; IDMs</div>
+        <div style="font-size:14px;color:var(--text-sec-light);line-height:1.5;">Vertically integrated chipmakers with next-generation PDKs and process node IP that must never leave the fab network.</div>
+      </div>
+      <div style="background:var(--white);border-radius:12px;padding:28px 22px;box-shadow:var(--card-shadow);">
+        <div style="font-size:28px;margin-bottom:12px;">🔒</div>
+        <div style="font-family:var(--font-display);font-size:17px;font-weight:700;color:var(--near-black);margin-bottom:8px;">High-Security Fabless</div>
+        <div style="font-size:14px;color:var(--text-sec-light);line-height:1.5;">Fabless teams with proprietary architectures, pre-tape-out netlists, and timing data representing years of engineering investment.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CTA ══════════════════════════════════════════════════════════════ -->
+<section class="section section--dark">
+  <div class="inner">
+    <div class="cta-banner reveal">
+      <h2>Your IP. Your infrastructure. Your control.</h2>
+      <p>Talk to our team about deploying LLMLocal in your environment — from initial sizing through go-live.</p>
+      <div class="cta-btns">
+        <a href="../about.html#contact" class="btn btn--blue">Request a Demo</a>
+        <a href="neeVdisha.html" class="btn btn--pill-white">Explore NeevDisha</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ══════════════════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__simple">
+      <div class="footer__brand-simple">
+        <h3>Neev<span>Semi</span></h3>
+        <p>NeevSemi India Private Limited · Bangalore, Karnataka · Est. 2026</p>
+      </div>
+      <div class="footer__legal-simple">
+        <a href="../terms.html">Terms of Service</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; 2026 NeevSemi India Private Limited. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

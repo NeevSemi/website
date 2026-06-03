@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Security — NeevSemi</title>
+  <meta name="description" content="NeevSemi's security posture — how we protect your data and how our products handle semiconductor IP." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">Neev<span>Semi</span></a>
+    <ul class="nav__links">
+      <li class="nav-dropdown"><a href="#">Products</a>
+                <div class="dropdown-menu">
+          <a href="products/neeVdisha.html">NeevDisha<span>Foundational Agentic Platform</span></a>
+        </div>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="about.html#contact" class="nav__cta-link">Contact Us</a></li>
+    </ul>
+    <button class="nav__hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" role="dialog" aria-modal="true">
+  <a href="products/neeVdisha.html">NeevDisha</a>
+  <a href="about.html">About</a>
+  <a href="about.html#contact" class="mob-cta">Contact Us</a>
+</div>
+
+<!-- ═══ HERO ═══════════════════════════════════════════════════════════ -->
+<section class="section section--dark hero hero--dark" style="min-height:52vh;">
+  <div class="inner hero__content">
+    <p class="hero__eyebrow fade-up d1">Security</p>
+    <h1 class="hero__headline fade-up d2" style="font-size:48px;">Your IP is the asset.<br>We treat it that way.</h1>
+    <p class="hero__sub fade-up d3">Security is not a feature at NeevSemi — it is the premise. Every product decision starts with the question: how do we ensure your semiconductor design data stays yours?</p>
+  </div>
+</section>
+
+<!-- ═══ SECURITY POSTURE ════════════════════════════════════════════════ -->
+<section class="section section--light">
+  <div class="inner">
+    <div class="sec-header reveal">
+      <p class="eyebrow">By Product</p>
+      <h2>Security built into every layer</h2>
+      <p>Each NeevSemi product has a distinct security posture matched to where it sits in your infrastructure.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:20px;" class="reveal">
+
+      <!-- LLMLocal -->
+      <div style="background:var(--white);border-radius:12px;padding:32px 36px;box-shadow:var(--card-shadow);display:grid;grid-template-columns:1fr 2fr;gap:40px;align-items:start;">
+        <div>
+          <p style="font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--apple-blue);margin-bottom:8px;">On-Premise</p>
+          <h3 style="font-family:var(--font-display);font-size:24px;font-weight:700;color:var(--near-black);margin-bottom:6px;">LLMLocal</h3>
+          <span style="display:inline-block;background:rgba(52,199,89,0.12);border:1px solid rgba(52,199,89,0.3);color:#1a7f37;font-size:12px;font-weight:600;padding:4px 10px;border-radius:980px;">Highest Security Tier</span>
+        </div>
+        <div>
+          <ul style="display:flex;flex-direction:column;gap:12px;list-style:none;">
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span style="color:#34c759;font-size:16px;flex-shrink:0;margin-top:1px;">✓</span><span style="font-size:15px;color:var(--text-sec-light);line-height:1.5;"><strong style="color:var(--near-black);">Air-gapped deployment</strong> — runs entirely behind your firewall with no outbound connections required after setup</span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span style="color:#34c759;font-size:16px;flex-shrink:0;margin-top:1px;">✓</span><span style="font-size:15px;color:var(--text-sec-light);line-height:1.5;"><strong style="color:var(--near-black);">Zero data egress</strong> — prompts, completions, and design data never leave your network</span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span style="color:#34c759;font-size:16px;flex-shrink:0;margin-top:1px;">✓</span><span style="font-size:15px;color:var(--text-sec-light);line-height:1.5;"><strong style="color:var(--near-black);">ITAR &amp; export control compliance</strong> — deployment configuration validated for regulated environments</span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span style="color:#34c759;font-size:16px;flex-shrink:0;margin-top:1px;">✓</span><span style="font-size:15px;color:var(--text-sec-light);line-height:1.5;"><strong style="color:var(--near-black);">Audit logs under your control</strong> — all inference logs stored locally, never transmitted to NeevSemi</span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span style="color:#34c759;font-size:16px;flex-shrink:0;margin-top:1px;">✓</span><span style="font-size:15px;color:var(--text-sec-light);line-height:1.5;"><strong style="color:var(--near-black);">Fine-tuning on proprietary data</strong> — training runs stay on your GPU cluster</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- LLMGateway -->
+      <div style="background:var(--white);border-radius:12px;padding:32px 36px;box-shadow:var(--card-shadow);display:grid;grid-template-columns:1fr 2fr;gap:40px;align-items:start;">
+        <div>
+          <p style="font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--apple-blue);margin-bottom:8px;">Gateway</p>
+          <h3 style="font-family:var(--font-display);font-size:24px;font-weight:700;color:var(--near-black);margin-bottom:6px;">LLMGateway</h3>
+          <span style="display:inline-block;background:rgba(0,113,227,0.10);border:1px solid rgba(0,113,227,0.25);color:var(--apple-blue);font-size:12px;font-weight:600;padding:4px 10px;border-radius:980px;">Enterprise Security Tier</span>
+        </div>
+        <div>
+          <ul style="display:flex;flex-direction:column;gap:12px;list-style:none;">
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span style="color:#34c759;font-size:16px;flex-shrink:0;margin-top:1px;">✓</span><span style="font-size:15px;color:var(--text-sec-light);line-height:1.5;"><strong style="color:var(--near-black);">TLS encryption in transit</strong> — all API traffic encrypted end-to-end between EDA tools, gateway, and providers</span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span style="color:#34c759;font-size:16px;flex-shrink:0;margin-top:1px;">✓</span><span style="font-size:15px;color:var(--text-sec-light);line-height:1.5;"><strong style="color:var(--near-black);">Semantic audit logging</strong> — every request and response is logged with intent metadata for compliance review</span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span style="color:#34c759;font-size:16px;flex-shrink:0;margin-top:1px;">✓</span><span style="font-size:15px;color:var(--text-sec-light);line-height:1.5;"><strong style="color:var(--near-black);">Rate limiting &amp; access controls</strong> — per-team and per-workflow token budgets enforced at the gateway</span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span style="color:#34c759;font-size:16px;flex-shrink:0;margin-top:1px;">✓</span><span style="font-size:15px;color:var(--text-sec-light);line-height:1.5;"><strong style="color:var(--near-black);">Provider isolation</strong> — credentials for each LLM provider are vaulted separately, never exposed to EDA tools</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- LLMScoreBench -->
+      <div style="background:var(--white);border-radius:12px;padding:32px 36px;box-shadow:var(--card-shadow);display:grid;grid-template-columns:1fr 2fr;gap:40px;align-items:start;">
+        <div>
+          <p style="font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--apple-blue);margin-bottom:8px;">Benchmark</p>
+          <h3 style="font-family:var(--font-display);font-size:24px;font-weight:700;color:var(--near-black);margin-bottom:6px;">LLMScoreBench</h3>
+          <span style="display:inline-block;background:rgba(0,113,227,0.10);border:1px solid rgba(0,113,227,0.25);color:var(--apple-blue);font-size:12px;font-weight:600;padding:4px 10px;border-radius:980px;">Configurable Data Scope</span>
+        </div>
+        <div>
+          <ul style="display:flex;flex-direction:column;gap:12px;list-style:none;">
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span style="color:#34c759;font-size:16px;flex-shrink:0;margin-top:1px;">✓</span><span style="font-size:15px;color:var(--text-sec-light);line-height:1.5;"><strong style="color:var(--near-black);">Benchmark data stays local</strong> — custom benchmark tasks run against your local or air-gapped LLM deployment, not sent to NeevSemi servers</span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span style="color:#34c759;font-size:16px;flex-shrink:0;margin-top:1px;">✓</span><span style="font-size:15px;color:var(--text-sec-light);line-height:1.5;"><strong style="color:var(--near-black);">Isolated scoring environment</strong> — evaluation pipeline runs in a sandboxed context per benchmark run</span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span style="color:#34c759;font-size:16px;flex-shrink:0;margin-top:1px;">✓</span><span style="font-size:15px;color:var(--text-sec-light);line-height:1.5;"><strong style="color:var(--near-black);">No design IP in shared infrastructure</strong> — benchmark results are never aggregated or shared without explicit customer consent</span></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ WEBSITE SECURITY ════════════════════════════════════════════════ -->
+<section class="section section--dark">
+  <div class="inner">
+    <div class="sec-header reveal">
+      <p class="eyebrow">Website & Infrastructure</p>
+      <h2>How we protect neevsemi.com</h2>
+    </div>
+    <div class="adv-grid reveal">
+      <div class="adv-card">
+        <div class="adv-card__title">HTTPS Everywhere</div>
+        <div class="adv-card__body">All traffic to neevsemi.com is encrypted via TLS 1.2+. HTTP requests are automatically redirected to HTTPS. HSTS headers enforce secure connections.</div>
+      </div>
+      <div class="adv-card">
+        <div class="adv-card__title">Minimal Data Collection</div>
+        <div class="adv-card__body">We collect only what you give us via the contact form. No third-party analytics trackers, no advertising pixels, no cross-site fingerprinting scripts on this site.</div>
+      </div>
+      <div class="adv-card">
+        <div class="adv-card__title">Access Controls</div>
+        <div class="adv-card__body">Backend systems and form submissions are accessible only to authorised NeevSemi personnel under role-based access controls with multi-factor authentication enforced.</div>
+      </div>
+      <div class="adv-card">
+        <div class="adv-card__title">Dependency Hygiene</div>
+        <div class="adv-card__body">This website runs on zero third-party JavaScript CDN dependencies. No external scripts are loaded, eliminating supply chain attack vectors entirely.</div>
+      </div>
+      <div class="adv-card">
+        <div class="adv-card__title">Secure Headers</div>
+        <div class="adv-card__body">Content Security Policy, X-Frame-Options, X-Content-Type-Options, and Referrer-Policy headers are set to mitigate XSS, clickjacking, and information leakage.</div>
+      </div>
+      <div class="adv-card">
+        <div class="adv-card__title">Regular Reviews</div>
+        <div class="adv-card__body">Our security posture is reviewed periodically by the founding team. We aim to achieve formal third-party penetration testing as the product matures.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ RESPONSIBLE DISCLOSURE ══════════════════════════════════════════ -->
+<section class="section section--light">
+  <div class="inner" style="max-width:640px;margin:0 auto;text-align:center;">
+    <div class="reveal">
+      <p class="eyebrow" style="font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--apple-blue);margin-bottom:14px;">Responsible Disclosure</p>
+      <h2 style="font-family:var(--font-display);font-size:36px;font-weight:600;line-height:1.10;color:var(--near-black);margin-bottom:18px;">Found a vulnerability?</h2>
+      <p style="font-size:17px;line-height:1.47;color:var(--text-sec-light);margin-bottom:12px;">We take security reports seriously. If you discover a potential security issue in our website or products, please disclose it responsibly before making it public.</p>
+      <p style="font-size:17px;line-height:1.47;color:var(--text-sec-light);margin-bottom:32px;">Email us at <a href="mailto:hello@neevsemi.com" style="color:var(--link-blue);">hello@neevsemi.com</a> with the subject line <strong>"Security Disclosure"</strong>. Include a description of the issue, steps to reproduce, and potential impact. We commit to acknowledging your report within 5 business days and working with you on a coordinated disclosure timeline.</p>
+      <p style="font-size:14px;color:var(--text-sec-light);">We do not operate a bug bounty programme at this time, but we genuinely appreciate responsible researchers who help make the ecosystem safer.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CTA ══════════════════════════════════════════════════════════════ -->
+<section class="section section--dark">
+  <div class="inner">
+    <div class="cta-banner reveal">
+      <h2>Questions about our security posture?</h2>
+      <p>Our team is happy to walk through security requirements specific to your environment — especially for ITAR-regulated or high-security deployments.</p>
+      <div class="cta-btns">
+        <a href="about.html#contact" class="btn btn--blue">Contact Us</a>
+        <!-- <a href="products/llmlocal.html" class="btn btn--pill-white">Learn about LLMLocal</a> -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__simple">
+      <div class="footer__brand-simple">
+        <h3>Neev<span>Semi</span></h3>
+        <p>NeevSemi India Private Limited · Bangalore, Karnataka · Est. 2026</p>
+      </div>
+      <div class="footer__legal-simple">
+        <a href="terms.html">Terms of Service</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; 2026 NeevSemi India Private Limited. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

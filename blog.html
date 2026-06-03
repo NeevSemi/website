@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — NeevSemi</title>
+  <meta name="description" content="Insights on AI in semiconductor design — LLM benchmarking, EDA workflows, and the future of agentic chip engineering." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .coming-badge { display:inline-flex;align-items:center;gap:6px;background:rgba(41,151,255,0.12);border:1px solid rgba(41,151,255,0.3);color:var(--bright-blue);font-size:12px;font-weight:600;padding:6px 14px;border-radius:980px;letter-spacing:.04em;margin-bottom:24px; }
+    .coming-badge::before { content:''; width:7px;height:7px;border-radius:50%;background:var(--bright-blue);animation:pulse 1.8s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1}50%{opacity:0.3} }
+    .topic-chip { display:inline-flex;padding:8px 16px;border-radius:980px;font-size:13px;border:1px solid rgba(255,255,255,0.15);color:rgba(255,255,255,0.65);background:rgba(255,255,255,0.04); }
+    .post-skeleton { background:var(--white);border-radius:12px;overflow:hidden;box-shadow:var(--card-shadow);opacity:0.55; }
+    .post-skeleton__img { height:160px;background:linear-gradient(135deg,#e8e8ec,#d4d4d8); }
+    .post-skeleton__body { padding:20px 20px 24px; }
+    .post-skeleton__tag { height:10px;width:60px;border-radius:4px;background:#d4d4d8;margin-bottom:12px; }
+    .post-skeleton__title { height:14px;border-radius:4px;background:#d4d4d8;margin-bottom:8px; }
+    .post-skeleton__title.short { width:70%; }
+    .post-skeleton__line { height:10px;border-radius:4px;background:#e5e5ea;margin-bottom:6px; }
+    .post-skeleton__line.s { width:55%; }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">Neev<span>Semi</span></a>
+    <ul class="nav__links">
+      <li class="nav-dropdown"><a href="#">Products</a>
+                <div class="dropdown-menu">
+          <a href="products/neeVdisha.html">NeevDisha<span>Foundational Agentic Platform</span></a>
+        </div>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="about.html#contact" class="nav__cta-link">Contact Us</a></li>
+    </ul>
+    <button class="nav__hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" role="dialog" aria-modal="true">
+  <a href="products/neeVdisha.html">NeevDisha</a>
+  <a href="about.html">About</a>
+  <a href="about.html#contact" class="mob-cta">Contact Us</a>
+</div>
+
+<!-- ═══ HERO ═══════════════════════════════════════════════════════════ -->
+<section class="section section--dark" style="padding-top:calc(48px + 80px);padding-bottom:80px;text-align:center;">
+  <div class="inner">
+    <div class="coming-badge">Coming Soon</div>
+    <h1 class="fade-up d1" style="font-family:var(--font-display);font-size:56px;font-weight:600;line-height:1.07;letter-spacing:-0.28px;color:var(--white);max-width:600px;margin:0 auto 22px;">NeevSemi Blog</h1>
+    <p class="fade-up d2" style="font-size:19px;color:rgba(255,255,255,0.68);max-width:520px;margin:0 auto 40px;line-height:1.47;">Deep dives into LLM benchmarking for EDA, agentic AI in semiconductor workflows, and the infrastructure decisions that matter at tape-out.</p>
+    <a href="about.html#contact" class="btn btn--blue fade-up d3">Get Notified at Launch</a>
+  </div>
+</section>
+
+<!-- ═══ TOPICS PREVIEW ══════════════════════════════════════════════════ -->
+<section class="section section--dark" style="padding-top:0;padding-bottom:80px;">
+  <div class="inner">
+    <p style="text-align:center;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:20px;">Topics we'll cover</p>
+    <div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;" class="reveal">
+      <span class="topic-chip">LLM Benchmarking for EDA</span>
+      <span class="topic-chip">Agentic RTL Generation</span>
+      <span class="topic-chip">Choosing LLMs for Semiconductor Tasks</span>
+      <span class="topic-chip">ITAR Compliance &amp; AI</span>
+      <span class="topic-chip">NeevDisha Architecture Internals</span>
+      <span class="topic-chip">On-Premise vs Cloud LLMs</span>
+      <span class="topic-chip">Verification with AI Agents</span>
+      <span class="topic-chip">Cost vs Quality Tradeoffs in GenAI</span>
+      <span class="topic-chip">DRC Analysis Automation</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ POST SKELETONS ══════════════════════════════════════════════════ -->
+<section class="section section--light">
+  <div class="inner">
+    <div class="sec-header reveal">
+      <p class="eyebrow">Preview</p>
+      <h2>First posts in the pipeline</h2>
+      <p>Here's what we're writing. Sign up to be the first to read them.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;" class="reveal">
+      <div style="background:var(--white);border-radius:12px;overflow:hidden;box-shadow:var(--card-shadow);">
+        <div style="height:8px;background:linear-gradient(90deg,var(--apple-blue),var(--bright-blue));"></div>
+        <div style="padding:24px 22px 28px;">
+          <p style="font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--apple-blue);margin-bottom:10px;">Benchmarking</p>
+          <h3 style="font-family:var(--font-display);font-size:19px;font-weight:700;color:var(--near-black);line-height:1.3;margin-bottom:10px;">Why Generic LLM Benchmarks Fail Semiconductor Teams</h3>
+          <p style="font-size:14px;color:var(--text-sec-light);line-height:1.5;">MMLU scores don't predict RTL correctness. Here's what does — and how to measure it for your specific EDA workflow.</p>
+        </div>
+      </div>
+      <div style="background:var(--white);border-radius:12px;overflow:hidden;box-shadow:var(--card-shadow);">
+        <div style="height:8px;background:linear-gradient(90deg,#5856d6,#af52de);"></div>
+        <div style="padding:24px 22px 28px;">
+          <p style="font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#5856d6;margin-bottom:10px;">Architecture</p>
+          <h3 style="font-family:var(--font-display);font-size:19px;font-weight:700;color:var(--near-black);line-height:1.3;margin-bottom:10px;">Building a Closed-Loop AI Agent for EDA: Lessons from NeevDisha</h3>
+          <p style="font-size:14px;color:var(--text-sec-light);line-height:1.5;">A technical walkthrough of how NeevDisha's feedback loop continuously reconfigures the LLM stack without human intervention.</p>
+        </div>
+      </div>
+      <div style="background:var(--white);border-radius:12px;overflow:hidden;box-shadow:var(--card-shadow);">
+        <div style="height:8px;background:linear-gradient(90deg,#34c759,#30d158);"></div>
+        <div style="padding:24px 22px 28px;">
+          <p style="font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#1a7f37;margin-bottom:10px;">Security</p>
+          <h3 style="font-family:var(--font-display);font-size:19px;font-weight:700;color:var(--near-black);line-height:1.3;margin-bottom:10px;">Air-Gapped LLM Deployment: A Practical Guide for ITAR-Regulated Fabs</h3>
+          <p style="font-size:14px;color:var(--text-sec-light);line-height:1.5;">Step-by-step considerations for deploying LLMLocal in a defense-adjacent semiconductor facility with zero data egress.</p>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:40px;" class="reveal">
+      <a href="about.html#contact" class="btn btn--blue">Notify Me When the Blog Launches</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__simple">
+      <div class="footer__brand-simple">
+        <h3>Neev<span>Semi</span></h3>
+        <p>NeevSemi India Private Limited · Bangalore, Karnataka · Est. 2026</p>
+      </div>
+      <div class="footer__legal-simple">
+        <a href="terms.html">Terms of Service</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; 2026 NeevSemi India Private Limited. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
