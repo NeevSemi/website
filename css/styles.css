@@ -1158,11 +1158,9 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   transform: translateX(-50%) translateY(0);
 }
 
-/* ─── MINIMUM TOUCH TARGETS ─────────────────────────────────────────── */
-/* Only apply to top-level nav items, NOT dropdown links (would break span layout) */
-.nav__links > li > a { min-height: 44px; display: flex; align-items: center; }
-.mobile-menu a       { min-height: 44px; }
-.nav__cta-link       { min-height: 44px; display: inline-flex; align-items: center; }
+/* ─── TOUCH TARGETS — use padding instead of min-height to avoid layout shift ── */
+.nav__links > li > a { padding-top: 14px; padding-bottom: 14px; }
+.nav__cta-link       { padding-top: 6px  !important; padding-bottom: 6px !important; }
 
 /* ─── HONEYPOT FIELD (hidden from users, visible to bots) ───────────── */
 .hn-pot {
