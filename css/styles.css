@@ -212,17 +212,24 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   position: fixed;
   inset: 48px 0 0 0;
   z-index: 9998;
-  background: #000;
+  background: #0a0a0a;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 28px;
+  transform: translateY(-8px);
   opacity: 0;
+  visibility: hidden;
   pointer-events: none;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s ease;
   overflow-y: auto;
 }
-.mobile-menu.open { opacity: 1; pointer-events: all; }
+.mobile-menu.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: all;
+}
 .mobile-menu a {
   font-family: var(--font-display);
   font-size: 28px;
