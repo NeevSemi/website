@@ -1202,12 +1202,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 
 /* ─── HONEYPOT FIELD (hidden from users, visible to bots) ───────────── */
 .hn-pot {
-  position: absolute;
-  left: -9999px;
-  opacity: 0;
-  pointer-events: none;
-  height: 0;
-  overflow: hidden;
+  display: none;
 }
 
 /* ─── FORM LOADING STATE ─────────────────────────────────────────────── */
