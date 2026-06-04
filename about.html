@@ -3,11 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About — NeevSemi</title>
-  <meta name="description" content="NeevSemi is on a mission to make AI-native semiconductor design accessible to every chip team." />
+  <title>About Us | NeevSemi</title>
+  <meta name="description" content="NeevSemi builds foundational infrastructure agents that make agentic AI workflows enterprise-ready for semiconductor teams." />
+  <link rel="canonical" href="https://neevsemi.com/about.html" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="logo.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="logo.png" />
+  <link rel="apple-touch-icon" href="logo.png" />
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://neevsemi.com/about.html" />
+  <meta property="og:title"       content="About Us | NeevSemi" />
+  <meta property="og:description" content="NeevSemi builds foundational infrastructure agents that make agentic AI workflows enterprise-ready for semiconductor teams." />
+  <meta property="og:site_name"   content="NeevSemi" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary" />
+  <meta name="twitter:title"       content="About Us | NeevSemi" />
+  <meta name="twitter:description" content="NeevSemi builds foundational infrastructure agents that make agentic AI workflows enterprise-ready for semiconductor teams." />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
+<a href="#main" class="skip-link">Skip to main content</a>
 
 <!-- ═══ NAV ═══════════════════════════════════════════════════════════ -->
 <nav class="nav">
@@ -35,6 +51,7 @@
   <a href="about.html#contact" class="mob-cta">Contact Us</a>
 </div>
 
+<main id="main">
 <!-- ═══ HERO ═══════════════════════════════════════════════════════════ -->
 <section class="section section--light page-hero" style="padding-top:calc(48px + 88px);padding-bottom:72px;text-align:center;">
   <div class="inner">
@@ -79,21 +96,26 @@
       <p>We'd love to hear from you.</p>
     </div>
     <div class="contact-wrap reveal">
-      <form class="contact-form" novalidate>
+      <form class="contact-form" novalidate autocomplete="on">
+        <!-- Honeypot — hidden from users, catches bots -->
+        <div class="hn-pot" aria-hidden="true">
+          <label for="website_url">Website</label>
+          <input type="text" id="website_url" name="website_url" tabindex="-1" autocomplete="off" />
+        </div>
         <div class="field">
           <label for="fname">Full Name</label>
-          <input type="text" id="fname" name="name" placeholder="Jane Smith" required />
+          <input type="text" id="fname" name="name" placeholder="Your Name" required autocomplete="name" maxlength="200" />
         </div>
         <div class="field">
           <label for="femail">Work Email</label>
-          <input type="email" id="femail" name="email" placeholder="jane@yourcompany.com" required />
+          <input type="email" id="femail" name="email" placeholder="you@company.com" required autocomplete="email" maxlength="254" />
         </div>
         <div class="field full">
           <label for="fmsg">Message</label>
-          <textarea id="fmsg" name="message" placeholder="Tell us about your use case or question…" required></textarea>
+          <textarea id="fmsg" name="message" placeholder="Tell us about your use case or question…" required maxlength="5000"></textarea>
         </div>
         <div class="full" style="margin-top:4px;">
-          <button type="submit" class="btn btn--blue" style="width:100%;justify-content:center;font-size:17px;padding:13px 22px;">Send Message</button>
+          <button type="submit" class="btn btn--blue" style="width:100%;justify-content:center;font-size:17px;padding:13px 22px;" aria-label="Send message">Send Message</button>
         </div>
       </form>
       <div class="contact-info">
@@ -119,6 +141,8 @@
     </div>
   </div>
 </section>
+
+</main>
 
 <!-- ═══ FOOTER ══════════════════════════════════════════════════════════ -->
 <footer class="footer">
