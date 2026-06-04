@@ -1,0 +1,17 @@
+{
+  "name": "NeevSemi",
+  "short_name": "NeevSemi",
+  "description": "Foundational AI for Semiconductors",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#050b18",
+  "theme_color": "#050b18",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
