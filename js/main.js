@@ -26,31 +26,35 @@
         hamburger.classList.remove('open');
         mobileMenu.classList.remove('open');
         document.body.style.overflow = '';
+        // Reset Products accordion
+        const mp = mobileMenu.querySelector('.mob-products');
+        const mpt = mobileMenu.querySelector('.mob-products-toggle');
+        if (mp) mp.classList.remove('open');
+        if (mpt) mpt.setAttribute('aria-expanded', 'false');
       });
     });
   }
 
-  /* ── Products dropdown — touch/click support ─────────────────────── */
-  document.querySelectorAll('.nav-dropdown').forEach(dropdown => {
-    const trigger = dropdown.querySelector('a');
-    if (!trigger) return;
-
-    trigger.addEventListener('click', (e) => {
-      // Only intercept on touch/mobile — desktop uses CSS :hover
-      if (window.innerWidth > 768) return;
-      e.preventDefault();
-      const isOpen = dropdown.classList.contains('open');
-      // Close all other dropdowns
-      document.querySelectorAll('.nav-dropdown.open').forEach(d => d.classList.remove('open'));
-      if (!isOpen) dropdown.classList.add('open');
+  /* ── Mobile Products accordion (completely separate from desktop hover) ── */
+  const mobProductsToggle = document.querySelector('.mob-products-toggle');
+  if (mobProductsToggle) {
+    const mobProducts = mobProductsToggle.closest('.mob-products');
+    mobProductsToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = mobProducts.classList.toggle('open');
+      mobProductsToggle.setAttribute('aria-expanded', String(isOpen));
     });
-  });
+  }
 
-  // Close dropdown when clicking outside
-  document.addEventListener('click', (e) => {
-    if (!e.target.closest('.nav-dropdown')) {
-      document.querySelectorAll('.nav-dropdown.open').forEach(d => d.classList.remove('open'));
-    }
+  // Close mobile Products accordion when a child link is tapped
+  document.querySelectorAll('.mob-products-list a').forEach(a => {
+    a.addEventListener('click', () => {
+      if (mobProductsToggle) {
+        const mobProducts = mobProductsToggle.closest('.mob-products');
+        mobProducts.classList.remove('open');
+        mobProductsToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
   });
 
   /* ── Scroll reveal ───────────────────────────────────────────────── */
