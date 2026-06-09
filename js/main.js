@@ -246,13 +246,16 @@
       window.addEventListener('load', () => setTimeout(centerContact, 80));
     }
 
-    // Dynamic tab title when contact section is in view
+    // Dynamic tab title — set immediately if hash is #contact, then observe scroll
     const baseTitle = document.title;
+    if (window.location.hash === '#contact') {
+      document.title = 'Contact Us | NeevSemi';
+    }
     const titleObs = new IntersectionObserver(entries => {
       document.title = entries[0].isIntersecting
         ? 'Contact Us | NeevSemi'
         : baseTitle;
-    }, { threshold: 0.25 });
+    }, { threshold: 0.15 });
     titleObs.observe(contactSection);
   }
 
