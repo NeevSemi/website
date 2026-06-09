@@ -208,10 +208,52 @@
       const target = document.querySelector(href);
       if (target) {
         e.preventDefault();
-        const top = target.getBoundingClientRect().top + window.scrollY - 64;
-        window.scrollTo({ top, behavior: 'smooth' });
+        // Center #contact in viewport; top-align everything else
+        const top = href === '#contact'
+          ? target.getBoundingClientRect().top + window.scrollY
+            - Math.max(0, (window.innerHeight - target.offsetHeight) / 2)
+          : target.getBoundingClientRect().top + window.scrollY - 64;
+        window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
       }
     });
   });
+
+  /* ── Contact section: center on direct navigation + dynamic title ── */
+  const contactSection = document.getElementById('contact');
+  if (contactSection) {
+
+    // Helper: scroll contact section to vertical center of viewport
+    function centerContact() {
+      const top = contactSection.getBoundingClientRect().top + window.scrollY
+        - Math.max(0, (window.innerHeight - contactSection.offsetHeight) / 2);
+      window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+    }
+
+    // Intercept same-page "about#contact" links (e.g. nav Contact Us on about page)
+    document.querySelectorAll('a[href$="#contact"]').forEach(a => {
+      const url = new URL(a.href, location.href);
+      if (url.pathname === location.pathname) {
+        a.addEventListener('click', e => {
+          e.preventDefault();
+          centerContact();
+          history.pushState(null, '', '#contact');
+        });
+      }
+    });
+
+    // On page load with #contact hash (navigated from another page)
+    if (window.location.hash === '#contact') {
+      window.addEventListener('load', () => setTimeout(centerContact, 80));
+    }
+
+    // Dynamic tab title when contact section is in view
+    const baseTitle = document.title;
+    const titleObs = new IntersectionObserver(entries => {
+      document.title = entries[0].isIntersecting
+        ? 'Contact Us | NeevSemi'
+        : baseTitle;
+    }, { threshold: 0.25 });
+    titleObs.observe(contactSection);
+  }
 
 })();
